@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <EditText
+            android:id="@+id/main_ip_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ip address"/>
+
+        <EditText
+            android:id="@+id/main_port_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="port"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/main_connect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Connect"/>
+
+        <EditText
+            android:id="@+id/main_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="message to server"/>
+
+        <Button
+            android:id="@+id/main_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Send"/>
+        <Button
+            android:id="@+id/main_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Close"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/main_screen_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="received message will be shown here"/>
+        </ScrollView>
+
+    </LinearLayout>
